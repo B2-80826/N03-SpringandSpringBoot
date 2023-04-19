@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--context schema-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<bean id = "collection" class="org.tnsif.collection.CollectionDemo">
+<property name="contactNo">
+<list>
+	<value>9764651322</value>
+	<value>9815451111</value>
+	<value>9265646844</value>
+	<value>7765464546</value>
+</list>
+</property>
+<property name="books">
+<set>
+	<value>ManojGpt</value>
+	<value>PratikGPT</value>
+	<value>SahilGPT</value>
+	<value>RohitGPT</value>
+</set>
+</property>
+
+</bean>
+</beans>
